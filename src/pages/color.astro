@@ -1,5 +1,6 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { HEXToHSLForm } from "@/components/hex-to-hsl-form";
 import RootLayout from "@/layouts/RootLayout.astro";
 ---
 
@@ -7,10 +8,12 @@ import RootLayout from "@/layouts/RootLayout.astro";
     <h2 class="text-3xl font-semibold mb-4">Color Tools</h2>
 
     <!-- TO-DO: Hex to HSL Converter -->
-    <Card>
+    <Card className="max-w-lg">
         <CardHeader>
             <CardTitle>Hex to HSL</CardTitle>
         </CardHeader>
-        <CardContent />
+        <CardContent>
+            <HEXToHSLForm client:load />
+        </CardContent>
     </Card>
 </RootLayout>
