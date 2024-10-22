@@ -16,6 +16,8 @@ permissions:
 
 jobs:
   build:
+    env:
+      PUBLIC_APP_BASE_PATH: ${{ vars.PUBLIC_APP_BASE_PATH }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
