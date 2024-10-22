@@ -3,6 +3,7 @@ import "@fontsource/poppins";
 import "@/styles/globals.css";
 
 import { ViewTransitions } from "astro:transitions";
+import { Toaster } from "react-hot-toast";
 
 import { AppSidebar } from "@/components/app-sidebar";
 
@@ -32,5 +33,7 @@ const pageTitle = title ? `${title} | ${APP_NAME}` : APP_NAME;
         <AppSidebar client:load>
             <slot />
         </AppSidebar>
+
+        <Toaster client:load />
     </body>
 </html>

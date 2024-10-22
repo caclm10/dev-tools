@@ -1,6 +1,6 @@
 ---
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { HEXToHSLForm } from "@/components/hex-to-hsl-form";
+import { HexToHSLForm } from "@/features/color/components/hex-to-hsl-form";
 import RootLayout from "@/layouts/RootLayout.astro";
 ---
 
@@ -13,7 +13,7 @@ import RootLayout from "@/layouts/RootLayout.astro";
             <CardTitle>Hex to HSL</CardTitle>
         </CardHeader>
         <CardContent>
-            <HEXToHSLForm client:load />
+            <HexToHSLForm client:load />
         </CardContent>
     </Card>
 </RootLayout>
